@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ketiboldiais/undou.git/static/css/main.8c32583f.css",
+    "main.js": "/ketiboldiais/undou.git/static/js/main.478e3086.js",
+    "index.html": "/ketiboldiais/undou.git/index.html",
+    "main.8c32583f.css.map": "/ketiboldiais/undou.git/static/css/main.8c32583f.css.map",
+    "main.478e3086.js.map": "/ketiboldiais/undou.git/static/js/main.478e3086.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c32583f.css",
+    "static/js/main.478e3086.js"
+  ]
+}
