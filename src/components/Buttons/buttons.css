@@ -1,0 +1,13 @@
+button.add-exercise-button,
+button.add-set-button {
+	width: fit-content;
+	padding: 0 1%;
+}
+
+button.add-set-button {
+	background-color: lightgrey;
+}
+
+button.add-exercise-button {
+	background-color: lightgrey;
+}

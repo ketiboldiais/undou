@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Session from "./components/Session/Session";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const workout = {
+		id: "Session1",
+		date: new Date(),
+		rounds: [
+			{ exercise: "bench press", sets: [{ reps: 0, weight: 0 }] },
+			{ exercise: "squat", sets: [{ reps: 5, weight: 285 }] },
+			{ exercise: "deadlift", sets: [{ reps: 5, weight: 305 }] },
+			{ exercise: "OHP", sets: [{ reps: 5, weight: 125 }] },
+			{ exercise: "Curl", sets: [{ reps: 5, weight: 125 }] },
+		],
+	};
+	return (
+		<div className="App">
+			<Session sessionData={workout} />
+		</div>
+	);
 }
 
 export default App;

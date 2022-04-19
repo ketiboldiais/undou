@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+* {
+	font-family: "Fira Code";
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: #959595;
+	color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+	width: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+	background-color: #dfdfdf;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+		inset -2px -2px grey, inset 2px 2px #dfdfdf;
 }
 
-.App-link {
-  color: #61dafb;
+.session-window {
+	background-color: #dfdfdf;
+	border: solid thin grey;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+		inset -2px -2px grey, inset 2px 2px #dfdfdf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.session-window-control-bar {
+	display: flex;
+	background-color: navy;
+	padding: 2%;
+	color: white;
+	justify-content: space-between;
+}
+
+.movement-cards-container {
+	padding: 1%;
+}
+
+.movement-card {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 0;
+	background-color: #f4f4f4;
+	border: solid thin black;
+
+	color: black;
+}
+
+.movement-card-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1%;
+}
+
+.set-reps-weight-header {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2%;
+}
+.set-reps-weight-header div {
+	text-align: center;
+	flex: 1;
+}
+
+.exercise-set {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: solid thin grey;
+	border-bottom: solid thin grey;
+	padding: 0;
+	margin: 1% auto;
+}
+.exercise-set div {
+	flex: 1;
+	text-align: center;
+}
+
+button:not(:disabled):active {
+	box-shadow: inset -1px -1px #fff, inset 1px 1px grey,
+		inset -1px -1px #dfdfdf, inset 1px 1px #0a0a0a;
+}
+
+.new-set-form {
+	display: flex;
+	margin: 10% 0 2% 0;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.new-exercise-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.new-exercise-form input,
+.new-exercise-form label {
+	display: block;
+}
+
+.exercise-container {
+	padding: 0 1%;
+}
+
+button {
+	display: block;
+	cursor: pointer;
+	min-height: 14px;
+	min-width: 16px;
+	background: silver;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+		inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	border: none;
+	padding: 1px 3px;
+	background-position: top 3px left 4px;
+	background-repeat: no-repeat;
+}
+button.delete-button {
+	padding: 0;
+}
+
+input {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: inset -1px -1px #fff, inset 1px 1px grey,
+		inset -1px -1px #dfdfdf, inset 1px 1px #0a0a0a;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 2px 1px;
+}
+
+/* .exercise-set input {
+	width: 50%;
+} */
+
+.add-set-button {
+	font-size: 0.95rem;
+	font-weight: bold;
+	background-color: rgb(0, 126, 38);
+	box-shadow: inset -1px -1px #008521, inset 1px 1px rgb(0, 133, 24),
+		inset -2px -2px rgb(0, 118, 30), inset 2px 2px #00c203;
+	color: white;
+}
+.delete-exercise-button {
+	font-size: 0.95rem;
+	font-weight: bold;
+	background-color: rgb(222, 33, 0);
+	box-shadow: inset -1px -1px #850000, inset 1px 1px rgb(255, 25, 25),
+		inset -2px -2px rgb(118, 0, 0), inset 2px 2px #c20000;
+	color: white;
+	white-space: nowrap;
+	padding: 1% 2%;
+}
+
+.end-session-button {
+	padding: 1%;
 }
